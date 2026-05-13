@@ -1,0 +1,1 @@
+// No interactive JavaScript required for this static layout.

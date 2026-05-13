@@ -1,0 +1,73 @@
+:root {
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+
+  /* Brand Colors */
+  --color-primary-teal: #00b2a0;
+  --color-text-dark: #1f2a2a;
+  --color-text-body: #2f3e3a;
+
+  /* Backgrounds */
+  --color-bg-light: #c2f5f0; /* Fallback color */
+  --gradient-main: linear-gradient(180deg, #E0F9F6 0%, #BAF2ED 100%);
+
+  /* Card Colors (Updated to match Figma Design) */
+  --color-peach: #ECD5CC;
+  --color-blue-card: #A8D1DE;
+  --color-yellow-card: #F7E9A0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  
+  /* UPDATED: Applied the design gradient */
+  background: var(--gradient-main);
+  background-color: var(--color-bg-light); /* Fallback */
+  
+  color: var(--color-text-dark);
+  
+  /* UPDATED: Vertical flex direction to stack sections correctly */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevents horizontal scrollbars */
+}
+
+main {
+  width: 100%;
+  max-width: 1512px;
+  /* Removed background-color here so the body gradient shows through */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
